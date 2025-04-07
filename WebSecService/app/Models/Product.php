@@ -1,16 +1,11 @@
 <?php
-namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+    namespace App\Models;
 
-class Product extends Model  {
+    use Illuminate\Database\Eloquent\Model;
 
-	protected $fillable = [
-        'code',
-        'name',
-        'price',
-        'model',
-        'description',
-        'photo'
-    ];
-}
+    class Product extends Model {
+        protected $table = "products";
+        protected $fillable = ['name', 'model', 'code', 'price', 'description', 'photo', 'stock'];
+
+    }
