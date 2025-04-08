@@ -71,7 +71,8 @@
                 'name' => ['required', 'string', 'max:128'],
                 'model' => ['required', 'string', 'max:256'],
                 'description' => ['required', 'string', 'max:1024'],
-                'price' => ['required', 'numeric'],
+                'price' => ['required', 'numeric', 'min:0'],
+                'stock' => ['nullable', 'integer', 'min:0'], 
             ]);
 
 
